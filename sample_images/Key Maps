@@ -1,0 +1,9 @@
+Camera Position: 1, 2, 3, 4
+Zoom:		 z, c
+Translate:	 up, down, left, right
+Rotate:		 a, s, d, w
+Light:		 KP(2, 4, 5, 6, 8, +, -)
+Light Intesity:	 m, n
+Ball Display:	 Lshift
+Ball Rotate:	 i, j, k, l, u, o
+Shoot:		 space
