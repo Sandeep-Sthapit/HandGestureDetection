@@ -1,16 +1,16 @@
 # HandGestureDetection
 Simple Hand Gesture Detection using Haar Cascades. Haar cascades were trained using OpenCV with C++. 2000 positive samples and 5000 negative samples were used to train the cascades.
 
-  Keys                     |  Ball
+  Fist                     |  Palm
 :-------------------------:|:-------------------------:
-<img src="https://github.com/Sandeep-777/BasketBallCourt/blob/master/sample_images/key.png" width="400">  |  <img src="https://github.com/Sandeep-777/BasketBallCourt/blob/master/sample_images/ball.png" width="400"> 
+<img src="https://github.com/Sandeep-777/HandGestureDetection/blob/master/sample_images/fist.png" width="400">  |  <img src="https://github.com/Sandeep-777/HandGestureDetection/blob/master/sample_images/palm.png" width="400"> 
 
- Front View	           |  Side View
+ Right		           |  Fist and Palm
 :-------------------------:|:-------------------------:
-<img src="https://github.com/Sandeep-777/BasketBallCourt/blob/master/sample_images/front.png" width="400">  |  <img src="https://github.com/Sandeep-777/BasketBallCourt/blob/master/sample_images/side.png" width="400">
+<img src="https://github.com/Sandeep-777/HandGestureDetection/blob/master/sample_images/rpalm.png" width="400">  |  <img src="https://github.com/Sandeep-777/HandGestureDetection/blob/master/sample_images/simul.png" width="400">
 
 
- Top View                  |  Animation
+ Positive Samples          |  Negative Samples
 :-------------------------:|:-------------------------:
-<img src="https://github.com/Sandeep-777/BasketBallCourt/blob/master/sample_images/top.png" width="400"> | <img src="https://github.com/Sandeep-777/BasketBallCourt/blob/master/sample_images/animate.png" width="400">
+<img src="https://github.com/Sandeep-777/HandGestureDetection/blob/master/sample_images/positive.png" width="400" height="400"> | <img src="https://github.com/Sandeep-777/HandGestureDetection/blob/master/sample_images/negative.png" width="400" height="400">
 
