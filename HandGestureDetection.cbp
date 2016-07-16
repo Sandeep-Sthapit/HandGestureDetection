@@ -13,7 +13,29 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-g" />
+					<Add directory="/usr/local/include" />
 				</Compiler>
+				<Linker>
+					<Add option="-lopencv_calib3d" />
+					<Add option="-lopencv_contrib" />
+					<Add option="-lopencv_core" />
+					<Add option="-lopencv_features2d" />
+					<Add option="-lopencv_flann" />
+					<Add option="-lopencv_highgui" />
+					<Add option="-lopencv_imgproc" />
+					<Add option="-lopencv_legacy" />
+					<Add option="-lopencv_ml" />
+					<Add option="-lopencv_nonfree" />
+					<Add option="-lopencv_objdetect" />
+					<Add option="-lopencv_photo" />
+					<Add option="-lopencv_stitching" />
+					<Add option="-lopencv_superres" />
+					<Add option="-lopencv_ts" />
+					<Add option="-lopencv_video" />
+					<Add option="-lopencv_videostab" />
+					<Add option="-lopencv_objdetect" />
+					<Add directory="/usr/local/lib" />
+				</Linker>
 			</Target>
 			<Target title="Release">
 				<Option output="bin/Release/HandGestureDetection" prefix_auto="1" extension_auto="1" />
@@ -32,6 +54,8 @@
 		<Linker>
 			<Add option="`opencv-config --ldstaticflags`" />
 		</Linker>
+		<Unit filename="Detector.h" />
+		<Unit filename="VProcessor.h" />
 		<Unit filename="main.cpp" />
 		<Extensions>
 			<code_completion />
