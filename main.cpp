@@ -1,18 +1,28 @@
-#include <opencv2/core/core.hpp>
-#include <opencv2/imgproc/imgproc.hpp>
-#include <opencv2/highgui/highgui.hpp>
-using namespace cv;
+#include "Detector.h"
+#include "VProcessor.h"
 
-int main(int argc, char *argv[])
-{
-    Mat img = imread("lena.jpg", CV_LOAD_IMAGE_COLOR);
-    if(img.empty()) 
-       return -1;
-    namedWindow( "lena", CV_WINDOW_AUTOSIZE );
-    imshow("lena", img);
-    waitKey(0);
-    return 0;
+void draw(cv::Mat& img, cv::Mat& out) {
+
+	img.copyTo(out);
+	cv::circle(out, cv::Point(100, 100), 5, cv::Scalar(255, 0, 0), 2);
 }
 
+int main()
+{
+	// Now using the VideoProcessor class
+		// Create instance
+	VideoProcessor processor;
+	// Open video file
+	processor.setInput(0);
+	// Declare a window to display the video
+	//processor.displayInput("Input Video");
+	processor.displayOutput("Output Video");
+	// Play the video at the original frame rate
+	processor.setDelay(1000. / processor.getFrameRate());
+	// Set the frame processor callback function
+	processor.setFrameProcessor(getSkin);
+	// Start the process
+	processor.run();
 
-
+	cv::waitKey();
+}
